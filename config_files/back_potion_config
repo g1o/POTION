@@ -1,0 +1,34 @@
+# comment lines are ignored;
+# end directory names with '/' charactere whenever possible
+# you can reference the potion_dir in the other parameters by writing "$potion_dir", when applicable (path to directories or files)
+
+-=-=-= BASIC PARAMETER FOR LOCATION AND FILE NAME =-=-=-
+
+#potion_dir = /home/francisco/projects/POTION/positive_selection_pipeline/              # path to this program, you can reference it in the parameters below by writing "$potion_dir" when applicable (path to directories or files).
+potion_dir = /projects/POTION/positive_selection_pipeline/
+-=-=-= PATH TO EXTERNAL PROGRAMS USED BY POTION =-=-=-
+
+# type the path of the executable of each program below
+
+codeml = $potion_dir/programs/paml44/bin/codeml                         # path to the Codeml executable of PAML package
+consense = $potion_dir/programs/executables/consense                     # path to the Consense executable of Phylip package
+muscle = $potion_dir/programs/muscle/muscle3.8.31_i86linux64             # path to the MUSCLE executable
+phipack = $potion_dir/programs/PhiPack/Phi                               # path to the Phi executable of PhiPack
+prank = $potion_dir/programs/prank/bin/prank                             # path to the Prank executable
+proml = $potion_dir/programs/executables/proml                           # path to the Proml executable of Phylip package
+dnaml = $potion_dir/programs/executables/proml                           # path to the Proml executable of Phylip package
+seqboot = $potion_dir/programs/executables/seqboot                       # path to the Seqboot executable of Phylip package
+trimal = $potion_dir/programs/trimAl/source/trimal                       # path to the Trimal executable
+mafft = $potion_dir/programs/prank/bin/mafft
+pagan = $potion_dir/programs/src/pagan/bin/pagan
+phyml = $potion_dir/programs/phyml/src/phyml
+
+-=-=-= PARAMETERS FOR INTERNAL USE =-=-=-
+
+result_table = final_results.out                  # file with the final result in tsv format (tab spaced values).
+result_uncertain = uncertain.out                  # file with the list of clusters where the null hypotesis can't be ignored by the positive evidence. Leave empty if you do not desire to produce this list
+result_positive = positive.out                    # file with the list of clusters with evidence of positive selection.
+
+summary = summary.out
+log_file = final_log.log                          # log file name
+log_path = $potion_dir/log/                         # path where log file will be created

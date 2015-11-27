@@ -1,0 +1,93 @@
+################
+# POTION-1.1.2 #
+################
+
+Commit date: 09/24/2015
+
+- Bug fixes;
+
+ - POTION could get stuck when using AlignIO BioPerl module to change alignment
+ files from phylip to fasta and vice-versa (now POTION does not rely on BioPerl
+ to perform this step)
+
+
+
+################
+# POTION-1.1.1 #
+################
+
+Commit date: 09/18/2015
+
+
+- Bug fixes;
+
+  - POTION could not find output files produced by prank (prank changed its 
+  output file name since the version we used to validate POTION)
+
+  - POTION was stuck when parsing trimAl output file containing sequence
+  identity metrics
+
+  - POTION could not print proper information about some excluded groups/genes
+
+
+
+- Now it is much easier to create POTION configuration files!
+
+  - When executing POTION to create a new configuration file (--create_conf
+  parameter) it is possible to use several other parameters to tell POTION how
+  it should fills in the appropriate information. For more information about
+  this new feature please execute POTION with --help parameter or read
+  README.txt file. Please notice that old configuration files will probably not
+  work with this new version of POTION.
+
+
+
+- POTION now supports additional parameters to filter sequences and groups
+  based on identity metrics.
+  
+  - These metrics are intended to complement the existing ones, and may be
+  especially useful to remove groups likely to take a long time to compute
+  (refer to our article for a more detailed discussion about these groups). In
+  brief, groups with an elevated mean sequence identity (close to 100%) that
+  usually contain only a few distinct kinds of sequences are likely to get 
+  stuck. For those groups it appears that the likelihood functions of codeml
+  and phyml/phylip do not converge quickly to a maximum. Specifically, these
+  new variables now are available for users to further configure POTION
+  behavior and remove sequence and groups based on maximum identity values. For
+  groups, for instance, it could be useful to set max_group_identity to values
+  around 99% to remove groups where there is no sufficient diversity to detect
+  positive selection but are likely to get stuck during codeml execution. The
+  new variables implemented are:
+
+    - max_sequence_identity: maximum (mean/median) sequence identity cutoff
+
+    - sequence_identity_average_metric: which metric should be used when
+    computing sequence identity metric (mean/median)
+
+    - sequence_identity_comparison: which kind of sequence should be used when
+    comparing sequences (nt/aa)
+  
+    - max_group_identity: maximum mean group identity cutoff
+
+    - group_identity_comparison: which kind of sequence should be used when
+    comparing groups (nt/aa)
+
+
+
+##############
+# POTION-1.1 #
+##############
+
+Commit date: (08-05-2015)
+
+
+- Bug fixes;
+
+
+- POTION now supports PhyML for phylogenetic tree reconstruction (beta, not 
+  extensively tested). To use it first configure POTION so it knows where
+  to find PhyML (path for phyml is located at "config_files/potion_config")
+  and set POTION to use it for phylogenetic tree reconstruction (set
+  "phylogenetic_tree" parameter (found in POTION's configuration file)
+  to either phyml_nt or phyml_aa to use nucleotide or amino acid sequences,
+  respectivelly.
