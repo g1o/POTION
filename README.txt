@@ -216,18 +216,21 @@ This file is located in directory 'config_files/' and is called
 -------------- + potion_dir + --------------
 
 potion_dir - path to the root directory of POTION.
-
+             You can use '$potion_dir' in other parameters as a shortcut to the path you defined in this parameter.
 
 ------------------- + paths to third-party programs + ---------------
 
-codeml - path to the Codeml executable of PAML package consense - path
-to the Consense executable of Phylip package dnaml -  path to the Dnaml
-executable muscle -  path to the MUSCLE executable phipack - path to the
-Phi executable of PhiPack prank - path to the Prank executable proml -
-path to the Proml executable of Phylip package seqboot - path to the
-Seqboot executable of Phylip package trimal - path to the Trimal
-executable mafft - path to mafft executable phyml - path to phyml
-executable
+codeml - path to the Codeml executable of PAML package 
+consense - path to the Consense executable of Phylip package 
+dnaml -  path to the Dnaml executable 
+muscle - path to the MUSCLE executable 
+phipack - path to the Phi executable of PhiPack 
+prank - path to the Prank executable 
+proml - path to the Proml executable of Phylip package 
+seqboot - path to the Seqboot executable of Phylip package 
+trimal - path to the Trimal executable 
+mafft - path to mafft executable 
+phyml - path to phyml executable
 
 -------------- + names of output files + -------------------------
 
