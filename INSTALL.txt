@@ -30,7 +30,7 @@ You need to install the following third-party software to use POTION:
             (codeml executable)
 - TrimAl  - http://trimal.cgenomics.org/downloads
 - PhyML   - https://github.com/stephaneguindon/phyml/ 
-
+- R       - https://www.r-project.org/   
 
 We recommend you to download the versions for which we tested POTION's latest 
 version, listed in http://www.lmb.cnptia.embrapa.br/share/POTION/user_guide.html.
