@@ -1,5 +1,5 @@
                         README for POTION
-             (last updated 11/25/2015 - mm/dd/yyyy format)
+             (last updated 11/27/2015 - mm/dd/yyyy format)
 
 AUTHORS
 -=-=-=-
