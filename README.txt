@@ -216,7 +216,8 @@ This file is located in directory 'config_files/' and is called
 -------------- + potion_dir + --------------
 
 potion_dir - path to the root directory of POTION.
-             You can use '$potion_dir' in other parameters as a shortcut to the path you defined in this parameter.
+             You can use '$potion_dir' in other parameters as a shortcut
+             to the path you defined in this parameter.
 
 ------------------- + paths to third-party programs + ---------------
 
