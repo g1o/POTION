@@ -201,9 +201,8 @@ project) as a shortcut to POTION's directory. For example, if you have:
 and want to store your results in a directory named "analysis_yyyymmdd",
 then both lines refer to the same directory:
 
-  project_dir =
-/home/myname/POTION-<version>/projects/analysis_yyyymmdd/ project_dir =
-$potion_dir/projects/analysis_yyyymmdd/
+ project_dir = /home/myname/POTION-<version>/projects/analysis_yyyymmdd/
+ project_dir = $potion_dir/projects/analysis_yyyymmdd/
   
   
 
