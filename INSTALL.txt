@@ -1,5 +1,5 @@
                 INSTALL instructions for POTION
-          (last updated 11/27/2015 - mm/dd/yyyy format)
+          (last updated 12/02/2015 - mm/dd/yyyy format)
 
 AUTHORS
 -=-=-=-
@@ -30,10 +30,11 @@ You need to install the following third-party software to use POTION:
             (codeml executable)
 - TrimAl  - http://trimal.cgenomics.org/downloads
 - PhyML   - https://github.com/stephaneguindon/phyml/ 
-- R       - https://www.r-project.org/   
+- R       - https://www.r-project.org/
 
 We recommend you to download the versions for which we tested POTION's latest 
-version, listed in http://www.lmb.cnptia.embrapa.br/share/POTION/user_guide.html.
+version, listed in
+http://www.lmb.cnptia.embrapa.br/share/POTION/user_guide.html.
 
 Note that you can choose between MUSCLE, Prank and MAFFT for protein multiple 
 sequence alignment, and between dnaml|proml|phyml for phylogenetic tree
@@ -131,11 +132,12 @@ Setting POTION environment
 Editing 'potion_config'
 -=-=-=-=-=-=-=-=-=-=-
 
-Download POTION from http://www.lmb.cnptia.embrapa.br/share/POTION/downloads.html
-, uncompress the .tar.gz file and place in a folder of your choice. Then edit 
+Download POTION (http://www.lmb.cnptia.embrapa.br/share/POTION/downloads.html),
+uncompress the .tar.gz file and place in a folder of your choice. Then edit 
 POTION's configuration file (potion_config) in the 'config_files' directory. 
 
-Write the absolute path to POTION's main directory in parameter 'potion_dir'. Ex:
+Write the absolute path to POTION's main directory in parameter 'potion_dir'. 
+Example:
 
 potion_dir = /home/you/programs/POTION-<version>/
 
@@ -153,4 +155,4 @@ variable. You can use '$potion_dir' to refer to the path in 'potion_dir'.
 - proml: path to the Proml executable of Phylip package
 - seqboot: path to the Seqboot executable of Phylip package
 - trimal: path to the Trimal executable
-- phyml - path to the PhyML executable
+- phyml: path to the PhyML executable

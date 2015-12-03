@@ -4,8 +4,9 @@
 
 -=-=-= BASIC PARAMETER FOR LOCATION AND FILE NAME =-=-=-
 
-#potion_dir = /home/francisco/projects/POTION/positive_selection_pipeline/              # path to this program, you can reference it in the parameters below by writing "$potion_dir" when applicable (path to directories or files).
-potion_dir = /home/e11329/progs/POTION-1.1.2/
+potion_dir = /projects/POTION/positive_selection_pipeline/  # path to this program, you can reference it in the parameters below by
+                                                            # writing "$potion_dir" when applicable (path to directories or files).
+
 -=-=-= PATH TO EXTERNAL PROGRAMS USED BY POTION =-=-=-
 
 # type the path of the executable of each program below
