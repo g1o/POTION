@@ -47,15 +47,45 @@ sub help {
   
   print "Currently supported options when creating a new configuration file are:\n\n";
 #  print "\t\t--mode (string, mandatory) - to tell POTION which main analysis mode\n";
-  print " --stringency (string, optional) - stringency when setting up parameters\n    [Default - \"standard\"]\n    In brief, defines how stringent POTION should be when filling most qualitative/quantitative criteria to filter sequence/groups when creating a new configuration file.\n    Possible values are \"soft\", \"standard\" or \"hard\". Please check README.txt or POTION User Guide for more information about this parameter\n\n";
-  print " --outfile (string, optional) - name of output main configuration file.\n    [Default: potion_main_<radical>.conf]\n\n";
-  print " --CDS_dir_path (string, optional) - path to directory where multi-fasta CDS files are.\n    [Default: none. If provided, creates a configuration file with this parameter filled in]\n\n";
-  print " --homology_file_path (string, optional) - path to the homology relationship file (OrthoMCL V1.4 format).\n    [Default: none. If provided, creates a configuration file with this parameter filled in]\n\n";
-  print " --max_processors (integer, optional) - maximum number of processors available to POTION for parallelized steps\n    [Default: 10]\n\n";
-  print " --output_dir (string, optional) - path to the directory where POTION should write results.\n  [Default: none. If provided, creates a configuration file with this parameter filled in]\n\n";
-  print " --genetic_code (integer, optional) - genetic code to translate sequences/define valid start-stop codons. Currently supported values are the genetic codes as defined in NCBI.\n    [Default: none. If provided, POTION creates a configuration file with this parameter filled in]\n\n";
-  print "--homology_filter (integer, mandatory) - how POTION should treat groups of homologous regardin phylogenetic criteria.\n  [Default: none. Possible values are: 0 (analyze all sequences within group), 1 (remove all paralogs and analyze only the remainning putative 1-1 orthologs), 2 (remove groups with paralogs), 3 (remove 1-1 orthologs and analyze all remainning paralogs together) and 4 (remove 1-1 orthologs and split remainning paralogs to analyze each species individually).\n\n";
-  print "\nThis is an example of how to tell POTION to create a configuration file named \"config_file.conf\" to analyze bacterial genomic data (genetic code 11), using 10 processors, with soft qualitative/quantitative filtering criteria, analyzing only 1-1 orthologs, where sequence files are located at /home/user/sequences/ , the homology relationship file is located at /home/user/homology_files/example.txt and output directory will be /home/user/POTION_results/ :\n\n  potion.pl --create_conf --stringency soft --outfile config_file.conf --CDS_dir_path /home/user/sequences/ --homology_file_path /home/user/homology_files/example.txt --max_processors 10 --output_dir /home/user/POTION_results/ --genetic_code 11 --homology_filter 1";
+
+  print "--stringency (string, optional) 	- stringency when setting up parameters	[Default - \"standard\"]    
+					In brief, defines how stringent POTION should be when filling most qualitative/quantitative
+					criteria to filter sequence/groups when creating a new configuration file.
+					Possible values are: \"soft\", \"standard\" or \"hard\".
+					Please check README.txt or POTION User Guide for more information about this parameter\n\n";
+
+  print "--outfile (string, optional)		- name of output main configuration file.
+					[Default: potion_main_<radical>.conf]\n\n";
+
+  print "--CDS_dir_path (string, optional)	- path to directory where multi-fasta CDS files are.
+					[Default: none. If provided, creates a configuration file with this parameter filled in]\n\n";
+
+  print "--homology_file_path (string, optional)	- path to the homology relationship file (OrthoMCL V1.4 format).
+					[Default: none. If provided, creates a configuration file with this parameter filled in]\n\n";
+
+  print "--max_processors (integer, optional)	- maximum number of processors available to POTION for parallelized steps
+					[Default: 10]\n\n";
+
+  print "--output_dir (string, optional)\t	- path to the directory where POTION should write results.
+					[Default: none. If provided, creates a configuration file with this parameter filled in]\n\n";
+
+  print "--genetic_code (integer, optional)	- genetic code to translate sequences/define 
+					valid start-stop codons. Currently supported values are the genetic codes as defined in NCBI.
+					[Default: none. If provided, POTION creates a configuration file with this parameter filled in]\n\n";
+
+  print "--homology_filter (integer, mandatory)	- how POTION should treat groups of 
+					homologous regardin phylogenetic criteria.
+					[Default: none. Possible values are: 
+					0 (analyze all sequences within group),
+					1 (remove all paralogs and analyze only the remainning putative 1-1 orthologs),
+					2 (remove groups with paralogs),
+					3 (remove 1-1 orthologs and analyze all remainning paralogs together) and 
+					4 (remove 1-1 orthologs and split remainning paralogs to analyze each species individually).\n\n";
+
+  print "\nThis is an example of how to tell POTION to create a configuration file named \"config_file.conf\" to analyze bacterial genomic data (genetic code 11), using 
+10 processors, with soft qualitative/quantitative filtering criteria, analyzing only 1-1 orthologs, where sequence files are located at /home/user/sequences/ , 
+the homology relationship file is located at /home/user/homology_files/example.txt and output directory will be /home/user/POTION_results/ :
+	\n  potion.pl --create_conf --stringency soft --outfile config_file.conf --CDS_dir_path /home/user/sequences/ --homology_file_path /home/user/homology_files/example.txt --max_processors 10 --output_dir /home/user/POTION_results/ --genetic_code 11 --homology_filter 1";
 print "\n\n";
 }
 
