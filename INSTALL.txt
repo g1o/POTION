@@ -30,7 +30,7 @@ You need to install the following third-party software to use POTION:
             (codeml executable)
 - TrimAl  - http://trimal.cgenomics.org/downloads
 - PhyML   - https://github.com/stephaneguindon/phyml/ 
-- R       - https://www.r-project.org/
+
 
 We recommend you to download the versions for which we tested POTION's latest 
 version, listed in
@@ -86,7 +86,7 @@ perl -e 1 -MFile::Basename
 perl -e 1 -MFindBin
 perl -e 1 -MCapture::Tiny
 perl -e 1 -MGetopt::Long
-perl -e 1 -MStatistics::R
+
 
 You can install these modules through the CPAN, or manually download
 (http://search.cpan.org/) and compile them. To use CPAN, you can do by 
@@ -112,7 +112,7 @@ perl -MCPAN -e 'install "File::Basename"'
 perl -MCPAN -e 'install "FindBin"'
 perl -MCPAN -e 'install "Capture::Tiny"'
 perl -MCPAN -e 'install "Getopt::Long"'
-perl -MCPAN -e 'install "Statistics::R"'
+
 
 
 To install manually, search for the most recent version of these modules and,
