@@ -38,7 +38,6 @@ use File::Basename;
 use FindBin;
 use Capture::Tiny ':all';
 use Getopt::Long;
-use Statistics::R;
 use lib "$FindBin::Bin/.";
 require 'module_latest.pm';
 
